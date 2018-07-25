@@ -50,7 +50,7 @@ body {
   max-width: 90vw;
 }
 .leftMonitor {
-background: radial-gradient(transparent, black), url("images/screen.png");
+background: radial-gradient(rgba(0,0,0,0.7), black), url("images/screen.png");
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -60,7 +60,7 @@ box-shadow: 0 0 5px black, inset 0 0 5px black;
 height: 100%;
 }
 .woodPanel {
-  background: radial-gradient(transparent, black), url("images/wood.jpg");
+  background: radial-gradient(rgba(0,0,0,0.7), black), url("images/wood.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -80,8 +80,10 @@ bottom: 0;
   height: 100%;
 }
 .brown {
-  background: linear-gradient(#5e5a40, #342013);
+  background: linear-gradient(#5e5a40, #222014) !important;
   z-index: 1;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 .tvbutton {
   display: inline;

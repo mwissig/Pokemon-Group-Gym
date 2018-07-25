@@ -21,18 +21,17 @@
     <div class="grid-container">
       <div class="bisect">
       <div class="tvbox brown">
-<div class="leftMonitor">
+<div class="leftMonitor" id="displayStats">
   content</h2></div>
 </div>
-    <div class="woodPanel">bottom
+    <div class="woodPanel"><button class="tvbutton on" onclick="pokeTV()"><i class="fas fa-power-off"></i></button><button onclick="intro.pause()" class="tvbutton">-</button><button onclick="intro.play()" class="tvbutton">+</button><button class="tvbutton" onclick="loadsound.play()"><i class="fas fa-caret-up"></i></button><button class="tvbutton" onclick="tv.play()"><i class="fas fa-caret-down"></i></button><button class="tvbutton" onlclick="tv.pause()"><i class="fas fa-ellipsis-h"></i></button>
   </div>
 </div>
       <div class="tvbox">
 <div class="pokeball" id="pokeball">
   <img class="warpAndShadow" id="pokeballimg" src="images/wannagame.jpg" height="80%" onerror='this.src="images/load.gif"'><h2 id="title">Welcome to GYMSAW</h2>
 </div>
-
-  <span class="light">&middot;</span><button class="tvbutton on" onclick="pokeTV()"><i class="fas fa-power-off"></i></button><button onclick="intro.pause()" class="tvbutton">-</button><button onclick="intro.play()" class="tvbutton">+</button><button class="tvbutton" onclick="loadsound.play()"><i class="fas fa-caret-up"></i></button><button class="tvbutton" onclick="tv.play()"><i class="fas fa-caret-down"></i></button><button class="tvbutton" onlclick="tv.pause()"><i class="fas fa-ellipsis-h"></i></button>
+<hr><hr>
     </div>
   </div>
     <script src="main.js"></script>
