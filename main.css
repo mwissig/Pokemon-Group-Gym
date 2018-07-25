@@ -2,67 +2,75 @@
   font-family: "saw";
   src: url("sawesome.woff") format("woff");
 }
+
 @font-face {
   font-family: "crt";
   src: url("Greenscr.woff") format("woff");
 }
+
 html {
   background-color: black;
-
   overflow: hidden;
   margin: 0 auto;
 }
+
 hr {
-  color:gray;
+  color: gray;
   background-color: gray;
   border: gray;
 }
+
 div {
   height: 100%;
 }
-h1, h2 {
 
-font-family: "saw";
-background-color: black;
-color: transparent;
-text-shadow: 0 0 10px rgba(84,0,0,0.5);
--webkit-background-clip: text;
-   -moz-background-clip: text;
-        background-clip: text;
-        /* modified from https://codepen.io/adambundy/pen/HtmaK */
-/* text-shadow: none; */
-/* text-shadow: 0 0 5px black; */
+h1, h2 {
+  font-family: "saw";
+  background-color: black;
+  color: transparent;
+  text-shadow: 0 0 10px rgba(84, 0, 0, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  /* modified from https://codepen.io/adambundy/pen/HtmaK */
+  /* text-shadow: none; */
+  /* text-shadow: 0 0 5px black; */
 }
 
 #titleheader {
-margin: 0;
-margin-top:15px;
-font-size: 3em;
+  margin: 0;
+  margin-top: 15px;
+  font-size: 3em;
 }
+
 body {
-    height: 100vh;
-      margin: 0 auto;
-        color: rgba(196, 217, 200, 0.8);
-        text-shadow: 0 0 1.8px white;
-      font-family: "crt";
+  height: 100vh;
+  margin: 0 auto;
+  color: rgba(196, 217, 200, 0.8);
+  text-shadow: 0 0 1.8px white;
+  font-family: "crt";
 }
+
 .blood {
   background: url("images/blood.png");
   background-size: cover;
   background-position: center;
   z-index: 10;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 25% 75%;
   grid-template-rows: 95vh;
 }
+
 .bisect {
   display: grid;
   grid-template-rows: 60% 40%;
   grid-template-columns: 100%;
   height: 100%;
 }
+
 .pokeball {
   background: radial-gradient(transparent, black), url("images/static2.gif");
   -webkit-background-size: cover;
@@ -73,23 +81,37 @@ body {
   box-shadow: 0 0 5px black, inset 0 0 5px black;
   height: 90%;
 }
+
 .pokeball img {
   max-height: 80vh;
   max-width: 80vw;
 }
+
 .leftMonitor {
-background: radial-gradient(rgba(0,0,0,0.7), black), url("images/screen.png");
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-text-align: center;
-box-shadow: 0 0 5px black, inset 0 0 5px black;
-height: 100%;
-padding: 10px;
+  background: radial-gradient(rgba(0, 0, 0, 0.7), black), url("images/screen.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  box-shadow: 0 0 5px black, inset 0 0 5px black;
+  height: 100%;
+  padding: 10px;
+}
+.saw {
+  background-image: url("images/jigsaw.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.kramer {
+  background-image: url("images/kramer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 .woodPanel {
-  background: radial-gradient(rgba(0,0,0,0.7), black), url("images/wood.jpg");
+  background: radial-gradient(rgba(0, 0, 0, 0.7), black), url("images/wood.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -98,11 +120,15 @@ padding: 10px;
   margin: 5px;
   margin-top: 60px;
   box-shadow: 0 0 5px black, inset 0 0 5px black;
-bottom: 0;
-  }
+  bottom: 0;
+}
+.woodPanel p {
+  font-family: sans-serif;
+}
 #displayStats {
   text-align: left;
 }
+
 .tvbox {
   text-align: center;
   background: linear-gradient(#181818, #050505);
@@ -112,23 +138,32 @@ bottom: 0;
   border-radius: 3px;
   height: 100%;
 }
+
 .brown {
   background: linear-gradient(#5e5a40, #222014) !important;
   z-index: 1;
   padding-top: 15px;
   padding-bottom: 35px;
 }
+
 .tvbutton {
   display: inline;
-background-image: url("images/wood.jpg");
-  color: #181818;
+  background-image: url("images/wood.jpg");
+  background-position: center;
+  background-size: cover;
+  color: black;
   min-height: 20px;
   min-width: 50px;
   border-radius: 3px;
   margin: 5px;
   border: 0;
-  box-shadow: 0 2px 4px black;
+  box-shadow: 0 2px 4px black, inset -2px 2px 4px rgba(255, 255, 255, 0.2), inset 2px -2px 4px black;
   font-size: 15px;
+  filter: brightness(75%);
+}
+
+.tvbutton:hover {
+  filter: brightness(50%);
 }
 
 .on {
@@ -141,21 +176,27 @@ background-image: url("images/wood.jpg");
   color: red;
   text-shadow: 0 0 2px red;
 }
+
 .dropShadow {
   filter: drop-shadow(0px 10px 10px black);
 }
+
 .glow {
   filter: drop-shadow(0 0 1.5px white);
 }
+
 .warp {
   filter: url(#displacementFilter);
 }
+
 .pokeball img:hover {
-    filter: drop-shadow(0px 10px 10px black) url(#displacementFilter2);
+  filter: drop-shadow(0px 10px 10px black) url(#displacementFilter2);
 }
-.warpAndShadow{
-    filter: drop-shadow(0px 10px 10px black) url(#displacementFilter);
+
+.warpAndShadow {
+  filter: drop-shadow(0px 10px 10px black) url(#displacementFilter);
 }
+
 .defs-only {
   position: absolute;
   height: 0;
@@ -163,6 +204,7 @@ background-image: url("images/wood.jpg");
   overflow: none;
   left: -100%;
 }
+
 @media only screen and (max-width: 768px) {
   html {
     overflow: auto;
@@ -171,10 +213,10 @@ background-image: url("images/wood.jpg");
     grid-template-rows: 50% 50%;
     grid-template-columns: 100%;
   }
-.leftMonitor {
-  min-height: 300px;
-}
-.woodPanel {
-  min-height: 250px;
-}
+  .leftMonitor {
+    min-height: 300px;
+  }
+  .woodPanel {
+    min-height: 250px;
+  }
 }
