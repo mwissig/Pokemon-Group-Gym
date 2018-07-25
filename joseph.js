@@ -31,7 +31,7 @@ function pikachuDoc() {
       );
       console.log(pikachu);
 
-      document.getElementById("pikachu-name").innerHTML = 'My name is ' + pikachu.name;
+      document.getElementById("displayStats").innerHTML = 'My name is ' + pikachu.name;
       document.getElementById("pikachu-hp").innerHTML = 'My health is at ' + pikachu.hp;
       document.getElementById("pikachu-attack").innerHTML = 'My attack is ' + pikachu.attack;
       document.getElementById("pikachu-defense").innerHTML = 'My defense is ' + pikachu.defense;
