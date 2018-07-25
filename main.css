@@ -46,6 +46,12 @@ body {
         text-shadow: 0 0 1.8px white;
       font-family: "crt";
 }
+.blood {
+  background: url("images/blood.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 25% 75%;
