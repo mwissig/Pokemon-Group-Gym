@@ -19,6 +19,14 @@ function callAPI() {
 
   }
 }
+
+
+//variables
+var ditto = false; //checks whether each pokemon has been called from API
+var mantyke = false;
+var palossand = false;
+var abilityLists = []; //a container for the abilities stored as strings
+var i = 0; //the index of the pokemon
 //Jig Saw//
 //animation and sounds for when API is connected
 function endLoadAnimation() {
@@ -56,7 +64,7 @@ function displayAllPokeInfo() {
 //show this if there are no stats loaded
 function pleaseClickjigSaw() {
   document.getElementById('displayStats').classList.add('nocaps');
-  document.getElementById("displayStats").innerHTML = (`Stats not loaded yet. Click on Sean Connery from the 1974 film "Zardoz" to load data.`);
+  document.getElementById("displayStats").innerHTML = (`Stats not loaded yet.`);
 }
 //trainer containting pokemon; makes 3 separate calls to API that push the pokemon into array one at a time: intentionally does not call them all at once to emphasize load animation and music
 jigSaw = {
