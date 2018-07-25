@@ -214,9 +214,23 @@ body {
     grid-template-columns: 100%;
   }
   .leftMonitor {
-    min-height: 300px;
+    height: 120px;
+    font-size: 12px;
+    overflow-y: scroll;
   }
   .woodPanel {
-    min-height: 250px;
+    height: 250px;
+    font-size: 12px;
   }
+#titleheader {
+  font-size: 2em;
+}
+.bisect {
+  grid-template-rows: 40% 60%;
+}
+.tvbutton {
+  font-size: 10px;
+  padding: 3px;
+  margin: 2px;
+}
 }
