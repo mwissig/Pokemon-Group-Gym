@@ -1,6 +1,9 @@
 trainer = {
   name: 'Jig-Saw'
   this.jigSaw = ['Jig-Saw'];
+}
+
+trainer = {
   name: 'John Kramer'
   this.johnKramer = ['John Kramer'];
 }
@@ -16,5 +19,3 @@ function callAPI() {
 
   }
 }
-
- 
