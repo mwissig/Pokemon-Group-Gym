@@ -1,19 +1,19 @@
 
 
 
-/* Pikachu
-================================= */
-class Pokemon {
-  constructor(name, hp, attack, defense, abilities){
-    this.name = name;
-    this.hp = hp;
-    this.attack = attack;
-    this.defense = defense;
-    this.abilities = abilities;
-  }
-}
-
-let Joseph = new Trainer();
+// /* Pikachu
+// ================================= */
+// class Pokemon {
+//   constructor(name, hp, attack, defense, abilities){
+//     this.name = name;
+//     this.hp = hp;
+//     this.attack = attack;
+//     this.defense = defense;
+//     this.abilities = abilities;
+//   }
+// }
+//
+// let Joseph = new Trainer();
 
 
 function pikachuDoc() {
@@ -40,7 +40,7 @@ function pikachuDoc() {
 
     }
   }
-  xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/pikachu/25", true);
+  xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/pikachu/25", true);
   console.log(xhttp);
   xhttp.send();
 }
@@ -54,7 +54,7 @@ function loadPokemon() {
       console.log(this.responseText);
     }yorvi
     };
-    xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/pikachu/25", true);
+    xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/pikachu/25", true);
     xhttp.send();
   }
 
@@ -89,7 +89,7 @@ function loadPokemon() {
 
       }
     }
-    xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/eevee/133", true);
+    xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/eevee/133", true);
     console.log(xhttp);
     xhttp.send();
   }
@@ -103,7 +103,7 @@ function loadPokemon() {
         console.log(this.responseText);
       }
       };
-      xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/eevee/133", true);
+      xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/eevee/133", true);
       xhttp.send();
     }
 
@@ -137,7 +137,7 @@ function loadPokemon() {
 
         }
       }
-      xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/mewtwo/150", true);
+      xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/mewtwo/150", true);
       console.log(xhttp);
       xhttp.send();
     }
@@ -151,7 +151,7 @@ function loadPokemon() {
           console.log(this.responseText);
         }
         };
-        xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/mewtwo/150", true);
+        xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/mewtwo/150", true);
         xhttp.send();
       }
 
@@ -185,7 +185,7 @@ function loadPokemon() {
 
           }
         }
-        xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/charmander/4", true);
+        xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/charmander/4", true);
         console.log(xhttp);
         xhttp.send();
       }
@@ -199,6 +199,6 @@ function loadPokemon() {
             console.log(this.responseText);
           }
           };
-          xhttp.open("GET","https://github.com/mwissig/pokegym/blob/master/charmander/4", true);
+          xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/charmander/4", true);
           xhttp.send();
         }
