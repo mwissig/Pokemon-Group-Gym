@@ -17,7 +17,11 @@ hr {
   background-color: gray;
   border: gray;
 }
+div {
+  height: 100%;
+}
 h1, h2 {
+
 font-family: "saw";
 background-color: black;
 color: transparent;
@@ -29,6 +33,7 @@ text-shadow: 0 0 10px rgba(84,0,0,0.5);
 /* text-shadow: none; */
 /* text-shadow: 0 0 5px black; */
 }
+
 #titleheader {
 margin: 0;
 margin-top:15px;
@@ -43,7 +48,7 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 25% 75%;
   grid-template-rows: 95vh;
 }
 .bisect {
@@ -85,7 +90,7 @@ padding: 10px;
   background-size: cover;
   text-align: center;
   margin: 5px;
-  margin-top: 50px;
+  margin-top: 60px;
   box-shadow: 0 0 5px black, inset 0 0 5px black;
 bottom: 0;
   }
