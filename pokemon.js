@@ -268,9 +268,9 @@
             My health is at ${pikachu.hp}<br>
             My attack is ${pikachu.attack}<br>
     My defense is ${pikachu.defense}<br>
-    My ability is ${pikachu.abilities}`);
+    My ability is ${pikachu.abilities}<p>Pikachu was born a happy and careless soul. Pikachu loved everyone and tried to befriend everyone. However, one night he met Eevee who started playing and Eevee threw Pikachu into the vat of acids at Ace chemicals. Ever since that day he has been looking for revenge.</p>`);
 
-
+    document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png`);
         }
       }
       xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/pikachu/25", true);
@@ -317,8 +317,8 @@
               My health is at ${eevee.hp}<br>
               My attack is ${eevee.attack}<br>
       My defense is ${eevee.defense}<br>
-      My ability is ${eevee.abilities}`);
-
+      My ability is ${eevee.abilities}<p>Eevee was born in an abandoned egg down by the sewer where the chemicals are rushing down the stream. They are causing Eevee to be in a lot of pain and he will wait for his next victim.</p>`);
+    document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png`)
 
           }
         }
@@ -365,8 +365,8 @@
                 My health is at ${mewtwo.hp}<br>
                 My attack is ${mewtwo.attack}<br>
         My defense is ${mewtwo.defense}<br>
-        My ability is ${mewtwo.abilities}`);
-
+        My ability is ${mewtwo.abilities}<p>Mewtwo was born in a place far away. He was born a machine.</p>`);
+    document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png`)
 
             }
           }
@@ -413,8 +413,8 @@
                   My health is at ${charmander.hp}<br>
                   My attack is ${charmander.attack}<br>
           My defense is ${charmander.defense}<br>
-          My ability is ${charmander.abilities}`);
-
+          My ability is ${charmander.abilities}<p>Charmander was born into the darkness and molded by the blackness of it all. He didn't see the light until he was already a man, by then it was nothing to him but blindness!. Charmander is a viscious murderer who waits underneith the rock to strike.</p>`);
+    document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png`)
 
               }
             }
@@ -423,15 +423,101 @@
             xhttp.send();
           }
 
-          function loadPokemon() {
+          function dittoDoc() {
             var xhttp = new XMLHttpRequest();
-            console.log(xhttp); {
+            xhttp.onreadystatechange = function() {
               if (this.readyState == 4 && this.status == 200) {
+
                 var myObj = JSON.parse(this.responseText);
-                document.getElementById('info').src = myObj.sprites.front_default;
-                console.log(this.responseText);
+                var ditto = new Pokemon (
+                  this.name = myObj.name,
+                  this.hp = myObj.stats[5].base_stat,
+                  this.attack = myObj.stats[4].base_stat,
+                  this.defense = myObj.stats[1].base_stat,
+                  this.ability = myObj.abilities[0].ability.name,
+                );
+                console.log(ditto);
+
+                document.getElementById("displayStats").innerHTML = (`My name is ${ditto.name}<br>
+                  My health is at ${ditto.hp}<br>
+                  My attack is ${ditto.attack}<br>
+          My defense is ${ditto.defense}<br>
+          My ability is ${ditto.abilities}<p>Ditto is a real creep, it could be right behind you and you wouldn't even know.`);
+    document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/132.png`)
+
               }
-              };
-              xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/charmander/4", true);
-              xhttp.send();
             }
+            xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/Ditto/132", true);
+            console.log(xhttp);
+            xhttp.send();
+          }
+
+          function mantykeDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+
+                var myObj = JSON.parse(this.responseText);
+                var mantyke = new Pokemon (
+                  this.name = myObj.name,
+                  this.hp = myObj.stats[5].base_stat,
+                  this.attack = myObj.stats[4].base_stat,
+                  this.defense = myObj.stats[1].base_stat,
+                  this.ability = myObj.abilities[0].ability.name,
+                );
+                console.log(mantyke);
+
+                document.getElementById("displayStats").innerHTML = (`My name is ${mantyke.name}<br>
+                  My health is at ${mantyke.hp}<br>
+                  My attack is ${mantyke.attack}<br>
+          My defense is ${mantyke.defense}<br>
+          My ability is ${mantyke.abilities}<p>It uses its flaps to do murders, somehow.</p>`);
+    document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/458.png`)
+
+              }
+            }
+            xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/Mantyke/Mantyke", true);
+            console.log(xhttp);
+            xhttp.send();
+          }
+
+          function paloDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+
+                var myObj = JSON.parse(this.responseText);
+                var palo = new Pokemon (
+                  this.name = myObj.name,
+                  this.hp = myObj.stats[5].base_stat,
+                  this.attack = myObj.stats[4].base_stat,
+                  this.defense = myObj.stats[1].base_stat,
+                  this.ability = myObj.abilities[0].ability.name,
+                );
+                console.log(palo);
+
+                document.getElementById("displayStats").innerHTML = (`My name is ${palo.name}<br>
+                  My health is at ${palo.hp}<br>
+                  My attack is ${palo.attack}<br>
+          My defense is ${palo.defense}<br>
+          My ability is ${palo.abilities}<p>This is some kind of sand castle that eats people. I didn't even make that up, that's all Nintendo.</p>`);
+    document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/770.png`)
+
+              }
+            }
+            xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/Palossand/Palossand.txt", true);
+            console.log(xhttp);
+            xhttp.send();
+          }
+          // function loadPokemon() {
+          //   var xhttp = new XMLHttpRequest();
+          //   console.log(xhttp); {
+          //     if (this.readyState == 4 && this.status == 200) {
+          //       var myObj = JSON.parse(this.responseText);
+          //       document.getElementById('info').src = myObj.sprites.front_default;
+          //       console.log(this.responseText);
+          //     }
+          //     };
+          //     xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/charmander/4", true);
+          //     xhttp.send();
+          //   }

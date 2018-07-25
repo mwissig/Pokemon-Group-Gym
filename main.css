@@ -8,9 +8,14 @@
 }
 html {
   background-color: black;
-  color: white;
+
   overflow: hidden;
   margin: 0 auto;
+}
+hr {
+  color:gray;
+  background-color: gray;
+  border: gray;
 }
 h1, h2 {
 font-family: "saw";
@@ -26,6 +31,8 @@ color: black;
 body {
     height: 100vh;
       margin: 0 auto;
+        color: rgba(196, 217, 200, 0.8);
+        text-shadow: 0 0 1.8px white;
       font-family: "crt";
 }
 .grid-container {
@@ -62,6 +69,7 @@ background-size: cover;
 text-align: center;
 box-shadow: 0 0 5px black, inset 0 0 5px black;
 height: 100%;
+padding: 10px;
 }
 .woodPanel {
   background: radial-gradient(rgba(0,0,0,0.7), black), url("images/wood.jpg");
@@ -75,7 +83,9 @@ height: 100%;
   box-shadow: 0 0 5px black, inset 0 0 5px black;
 bottom: 0;
   }
-
+#displayStats {
+  text-align: left;
+}
 .tvbox {
   text-align: center;
   background: linear-gradient(#181818, #050505);
