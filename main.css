@@ -19,14 +19,20 @@ hr {
 }
 h1, h2 {
 font-family: "saw";
-color: black;
+background-color: black;
+color: transparent;
+text-shadow: 0 0 10px rgba(84,0,0,0.5);
+-webkit-background-clip: text;
+   -moz-background-clip: text;
+        background-clip: text;
+        /* modified from https://codepen.io/adambundy/pen/HtmaK */
+/* text-shadow: none; */
 /* text-shadow: 0 0 5px black; */
 }
-#title {
-  position: fixed;
-  top: 10vh;
-  left:20vw;
-  font-size: 6em;
+#titleheader {
+margin: 0;
+margin-top:15px;
+font-size: 3em;
 }
 body {
     height: 100vh;
@@ -54,11 +60,11 @@ body {
   background-size: cover;
   text-align: center;
   box-shadow: 0 0 5px black, inset 0 0 5px black;
-  height: 90vh;
+  height: 90%;
 }
 .pokeball img {
-  max-height: 90vh;
-  max-width: 90vw;
+  max-height: 80vh;
+  max-width: 80vw;
 }
 .leftMonitor {
 background: radial-gradient(rgba(0,0,0,0.7), black), url("images/screen.png");
@@ -99,7 +105,7 @@ bottom: 0;
   background: linear-gradient(#5e5a40, #222014) !important;
   z-index: 1;
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 35px;
 }
 .tvbutton {
   display: inline;
@@ -127,8 +133,14 @@ bottom: 0;
 .dropShadow {
   filter: drop-shadow(0px 10px 10px black);
 }
+.glow {
+  filter: drop-shadow(0 0 1.5px white);
+}
 .warp {
   filter: url(#displacementFilter);
+}
+.pokeball img:hover {
+    filter: drop-shadow(0px 10px 10px black) url(#displacementFilter2);
 }
 .warpAndShadow{
     filter: drop-shadow(0px 10px 10px black) url(#displacementFilter);
@@ -139,4 +151,19 @@ bottom: 0;
   width: 0;
   overflow: none;
   left: -100%;
+}
+@media only screen and (max-width: 768px) {
+  html {
+    overflow: auto;
+  }
+  .grid-container {
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+  }
+.leftMonitor {
+  min-height: 300px;
+}
+.woodPanel {
+  min-height: 250px;
+}
 }

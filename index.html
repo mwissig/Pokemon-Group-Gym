@@ -6,6 +6,7 @@
   <title>GYMSAW</title>
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -19,12 +20,22 @@
         scale="50" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
+
+<svg class="defs-only">
+<filter id="displacementFilter2">
+  <feTurbulence type="turbulence" baseFrequency="0.02"
+      numOctaves="2" result="turbulence"/>
+  <feDisplacementMap in2="turbulence" in="SourceGraphic"
+      scale="50" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</svg>
   <!-- end warp -->
+
   <div class="grid-container">
     <div class="bisect">
       <div class="tvbox brown">
         <div class="leftMonitor" id="displayStats">
-          Do you want to play a game?</h2>
+          <p>Do you want to play a game?</p>
         </div>
       </div>
       <div class="woodPanel">
@@ -41,11 +52,10 @@
     </div>
     <div class="tvbox">
       <div class="pokeball" id="pokeball">
-        <img class="warpAndShadow" id="pokeballimg" src="images/wannagame.jpg" height="80%" onerror='this.src="images/load.gif"'>
-        <h2 id="title">Welcome to GYMSAW</h2>
+        <img class="warpAndShadow animated pulse infinite" id="pokeballimg" src="images/wannagame.jpg" height="80%" onerror='this.src="images/load.gif"'>
+
       </div>
-      <hr>
-      <hr>
+      <h1 id="titleheader" class="glow">GYMSAW</h1>
     </div>
   </div>
   <script src="main.js"></script>
