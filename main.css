@@ -2,7 +2,10 @@
   font-family: "saw";
   src: url("sawesome.woff") format("woff");
 }
-
+@font-face {
+  font-family: "crt";
+  src: url("Greenscr.woff") format("woff");
+}
 html {
   background-color: black;
   color: white;
@@ -23,6 +26,7 @@ color: black;
 body {
     height: 100vh;
       margin: 0 auto;
+      font-family: "crt";
 }
 .grid-container {
   display: grid;
