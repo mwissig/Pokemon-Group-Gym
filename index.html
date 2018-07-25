@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>GYMSAW</title>
-      <meta name="viewport" content="width=device-width">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="main.css">
-  </head>
-  <body>
-    <!-- creepy effects -->
-     <svg class="defs-only">
+
+<head>
+  <meta charset="utf-8">
+  <title>GYMSAW</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+  <!-- creepy effects -->
+  <svg class="defs-only">
   <filter id="displacementFilter">
     <feTurbulence type="turbulence" baseFrequency="0.01"
         numOctaves="2" result="turbulence"/>
@@ -17,23 +19,37 @@
         scale="50" xChannelSelector="R" yChannelSelector="G"/>
   </filter>
 </svg>
-<!-- end warp -->
-    <div class="grid-container">
-      <div class="bisect">
+  <!-- end warp -->
+  <div class="grid-container">
+    <div class="bisect">
       <div class="tvbox brown">
-<div class="leftMonitor" id="displayStats">
-  content</h2></div>
-</div>
-    <div class="woodPanel"><button class="tvbutton on" onclick="pokeTV()"><i class="fas fa-power-off"></i></button><button onclick="intro.pause()" class="tvbutton">-</button><button onclick="intro.play()" class="tvbutton">+</button><button class="tvbutton" onclick="loadsound.play()"><i class="fas fa-caret-up"></i></button><button class="tvbutton" onclick="tv.play()"><i class="fas fa-caret-down"></i></button><button class="tvbutton" onlclick="tv.pause()"><i class="fas fa-ellipsis-h"></i></button>
-  </div>
-</div>
-      <div class="tvbox">
-<div class="pokeball" id="pokeball">
-  <img class="warpAndShadow" id="pokeballimg" src="images/wannagame.jpg" height="80%" onerror='this.src="images/load.gif"'><h2 id="title">Welcome to GYMSAW</h2>
-</div>
-<hr><hr>
+        <div class="leftMonitor" id="displayStats">
+          content</h2>
+        </div>
+      </div>
+      <div class="woodPanel">
+        <button class="tvbutton" onclick="pikachuDoc()">POKEMON 1</button>
+        <button onclick="#" class="tvbutton">POKEMON 2</button>
+        <button class="tvbutton" onclick="#">POKEMON 3</button>
+        <button onclick="#" class="tvbutton">POKEMON 4</button>
+        <button class="tvbutton" onclick="#">POKEMON 5</button>
+        <button onclick="#" class="tvbutton">POKEMON 6</button>
+        <button class="tvbutton" onclick="#">POKEMON 7</button>
+      </div>
+    </div>
+    <div class="tvbox">
+      <div class="pokeball" id="pokeball">
+        <img class="warpAndShadow" id="pokeballimg" src="images/wannagame.jpg" height="80%" onerror='this.src="images/load.gif"'>
+        <h2 id="title">Welcome to GYMSAW</h2>
+      </div>
+      <hr>
+      <hr>
     </div>
   </div>
-    <script src="main.js"></script>
-  </body>
+  <script src="main.js"></script>
+    <script src="milo.js"></script>
+      <script src="joseph.js"></script>
+            <script src="pokemon.js"></script>
+</body>
+
 </html>
