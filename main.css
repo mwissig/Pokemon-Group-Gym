@@ -167,6 +167,7 @@ body {
 }
 .tvbutton:active {
     box-shadow: inset -2px 2px 4px black, inset 2px -2px 4px rgba(255, 255, 255, 0.2);
+    line-height: 0.8;
 }
 .on {
   background-color: #121212;
