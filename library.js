@@ -2,11 +2,8 @@ trainers = {
   jigsaw: [],
   kramer: []
 }
+var time = 0;
 
-
-
-/* Pikachu
-================================= */
 class Pokemon {
   constructor(name, hp, attack, defense, abilities) {
     this.name = name;
@@ -18,6 +15,8 @@ class Pokemon {
 };
 
 function callAPI() {
+  for (x = 0; x < 7; x++) {
+  if (time == 0) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -37,6 +36,8 @@ console.log(trainers);
 xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/pikachu/25", true);
 console.log(xhttp);
 xhttp.send();
+time = 1;
+} else if (time == 1) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -56,6 +57,9 @@ console.log(trainers);
 xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/eevee/133", true);
 console.log(xhttp);
 xhttp.send();
+time = 2;
+}
+else if (time == 2) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -75,6 +79,9 @@ console.log(trainers);
 xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/mewtwo/150", true);
 console.log(xhttp);
 xhttp.send();
+time = 3; }
+
+else if (time == 3) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -91,9 +98,12 @@ trainers.kramer.push(pokemon);
 console.log(trainers);
 }
 }
-xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/Ditto/132", true);
+xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/charmander/4", true);
 console.log(xhttp);
 xhttp.send();
+time = 4;
+}
+else if (time == 4) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -110,9 +120,12 @@ trainers.jigsaw.push(pokemon);
 console.log(trainers);
 }
 }
-xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/charmander/4", true);
+xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/Ditto/132", true);
 console.log(xhttp);
 xhttp.send();
+time = 5;
+}
+else if (time == 5) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -132,6 +145,9 @@ console.log(trainers);
 xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/Mantyke/Mantyke", true);
 console.log(xhttp);
 xhttp.send();
+time = 6;
+}
+else if (time == 6) {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
@@ -151,6 +167,9 @@ console.log(trainers);
 xhttp.open("GET", "https://raw.githubusercontent.com/mwissig/pokegym/master/Palossand/Palossand.txt", true);
 console.log(xhttp);
 xhttp.send();
+time = 7;
+}
+}
 }
 ////////////////////
 function pikachuDoc() {
@@ -198,11 +217,11 @@ function eeveeDoc() {
 
 
 function mewDoc() {
-      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.kramer[2].name}<br>
-                HP: ${trainers.kramer[2].hp}<br>
-                ATTACK: ${trainers.kramer[2].attack}<br>
-        DEFENSE: ${trainers.kramer[2].defense}<br>
-        ABILITY: ${trainers.kramer[2].abilities}<p>Mewtwo was born in a place far away. He was born a machine.</p>`);
+      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.kramer[3].name}<br>
+                HP: ${trainers.kramer[3].hp}<br>
+                ATTACK: ${trainers.kramer[3].attack}<br>
+        DEFENSE: ${trainers.kramer[3].defense}<br>
+        ABILITY: ${trainers.kramer[3].abilities}<p>Mewtwo was born in a place far away. He was born a machine.</p>`);
       document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png`)
       document.getElementById('character').className = "";
       document.getElementById('character').classList.add("animated");
@@ -219,11 +238,11 @@ function mewDoc() {
 
 
 function charmDoc() {
-      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.kramer[3].name}<br>
-                  HP: ${trainers.kramer[3].hp}<br>
-                  ATTACK: ${trainers.kramer[3].attack}<br>
-          DEFENSE: ${trainers.kramer[3].defense}<br>
-          ABILITY: ${trainers.kramer[3].abilities}<p>Charmander was born into the darkness and molded by the blackness of it all. He didn't see the light until he was already a man, by then it was nothing to him but blindness!. Charmander is a viscious murderer who waits underneith the rock to strike.</p>`);
+      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.kramer[2].name}<br>
+                  HP: ${trainers.kramer[2].hp}<br>
+                  ATTACK: ${trainers.kramer[2].attack}<br>
+          DEFENSE: ${trainers.kramer[2].defense}<br>
+          ABILITY: ${trainers.kramer[2].abilities}<p>Charmander was born into the darkness and molded by the blackness of it all. He didn't see the light until he was already a man, by then it was nothing to him but blindness!. Charmander is a viscious murderer who waits underneith the rock to strike.</p>`);
       document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png`)
       document.getElementById('character').className = "";
       document.getElementById('character').classList.add("animated");
@@ -245,11 +264,11 @@ function dittoDoc() {
 }
 
 function mantykeDoc() {
-      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.jigsaw[1].name}<br>
-                  HP: ${trainers.jigsaw[1].hp}<br>
-                  ATTACK: ${trainers.jigsaw[1].attack}<br>
-          DEFENSE: ${trainers.jigsaw[1].defense}<br>
-          ABILITY: ${trainers.jigsaw[1].abilities}<p>It uses its flaps to do murders, somehow.</p>`);
+      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.jigsaw[2].name}<br>
+                  HP: ${trainers.jigsaw[2].hp}<br>
+                  ATTACK: ${trainers.jigsaw[2].attack}<br>
+          DEFENSE: ${trainers.jigsaw[2].defense}<br>
+          ABILITY: ${trainers.jigsaw[2].abilities}<p>It uses its flaps to do murders, somehow.</p>`);
       document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/458.png`)
       document.getElementById('character').className = "";
       document.getElementById('character').classList.add("animated");
@@ -258,11 +277,11 @@ function mantykeDoc() {
 }
 
 function paloDoc() {
-      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.jigsaw[2].name}<br>
-                  HP: ${trainers.jigsaw[2].hp}<br>
-                  ATTACK: ${trainers.jigsaw[2].attack}<br>
-          DEFENSE: ${trainers.jigsaw[2].defense}<br>
-          ABILITY: ${trainers.jigsaw[2].abilities}<p>This is some kind of sand castle that eats people. I didn't even make that up, that's all Nintendo.</p>`);
+      document.getElementById("displayStats").innerHTML = (`NAME: ${trainers.jigsaw[1].name}<br>
+                  HP: ${trainers.jigsaw[1].hp}<br>
+                  ATTACK: ${trainers.jigsaw[1].attack}<br>
+          DEFENSE: ${trainers.jigsaw[1].defense}<br>
+          ABILITY: ${trainers.jigsaw[1].abilities}<p>This is some kind of sand castle that eats people. I didn't even make that up, that's all Nintendo.</p>`);
       document.getElementById('pokeballimg').src = (`https://assets.pokemon.com/assets/cms2/img/pokedex/full/770.png`)
       document.getElementById('character').className = "";
       document.getElementById('character').classList.add("animated");
