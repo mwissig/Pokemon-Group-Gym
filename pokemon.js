@@ -510,7 +510,7 @@
             xhttp.send();
           }
 
-          
+
           // function loadPokemon() {
           //   var xhttp = new XMLHttpRequest();
           //   console.log(xhttp); {
@@ -523,3 +523,5 @@
           //     xhttp.open("GET","https://raw.githubusercontent.com/mwissig/pokegym/master/charmander/4", true);
           //     xhttp.send();
           //   }
+
+          
