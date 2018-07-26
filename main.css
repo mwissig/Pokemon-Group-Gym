@@ -160,7 +160,7 @@ body {
   box-shadow: 0 2px 4px black, inset -2px 2px 4px rgba(255, 255, 255, 0.2), inset 2px -2px 4px black;
   font-size: 15px;
   filter: brightness(75%);
-  font-family: sans-serif;
+  font-family: sans-serif !important;
   padding: 3px;
   padding-left: 5px;
   padding-right: 5px;
