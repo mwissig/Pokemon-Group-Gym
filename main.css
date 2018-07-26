@@ -122,12 +122,6 @@ body {
   box-shadow: 0 0 5px black, inset 0 0 5px black;
   bottom: 0;
 }
-.woodPanel:active {
-    -webkit-box-shadow: inset 2px -2px 4px black, inset -2px 2px 4px rgba(255, 255, 255, 0.2);
-    box-shadow: 0 2px 4px black;
-    position:relative;
-    /* top:1px; */
-}
 .woodPanel p {
   font-family: sans-serif;
 }
@@ -166,6 +160,12 @@ body {
   box-shadow: 0 2px 4px black, inset -2px 2px 4px rgba(255, 255, 255, 0.2), inset 2px -2px 4px black;
   font-size: 15px;
   filter: brightness(75%);
+  font-family: sans-serif;
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 2;
+  text-shadow: 1px 1px 1px black;
 }
 
 .tvbutton:hover {
