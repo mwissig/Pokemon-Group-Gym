@@ -509,6 +509,8 @@
             console.log(xhttp);
             xhttp.send();
           }
+
+          
           // function loadPokemon() {
           //   var xhttp = new XMLHttpRequest();
           //   console.log(xhttp); {
