@@ -165,7 +165,9 @@ body {
 .tvbutton:hover {
   filter: brightness(50%);
 }
-
+.tvbutton:active {
+    box-shadow: inset -2px 2px 4px black, inset 2px -2px 4px rgba(255, 255, 255, 0.2);
+}
 .on {
   background-color: #121212;
   color: white;
